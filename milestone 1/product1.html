@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Listing Page</title>
+		<!-- Include Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html">OHSEEM</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cart.html">Cart</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="bg-dark text-white text-center py-2">
+			<h1>Product Details</h1>
+		</header>
+		<main class="container mt-4">
+			<div class="row">
+				<div class="col-md-6">
+					<img
+						src="https://picsum.photos/200/300"
+						alt="Product"
+						class="img-fluid rounded"
+						style="width: 90%"
+					/>
+				</div>
+				<div class="col-md-6">
+					<h1>Product 1</h1>
+					<p class="text-muted">Price: $19.99</p>
+					<p>
+						Description of the product. Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad
+						minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum
+						dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui officia
+						deserunt mollit anim id est laborum.
+					</p>
+					<hr />
+					<h3>Ratings and Reviews</h3>
+					<div class="row">
+						<div class="media" style="height: fit-content">
+							<img
+								src="https://picsum.photos/60/40"
+								class="rounded-circle"
+								alt="User 1"
+							/>
+							<div class="media-body">
+								<h5 class="mt-0">User 1</h5>
+								<p class="mb-0">Rating: 5 stars</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Velit autem corrupti sed
+									cum, reprehenderit culpa voluptatibus dicta
+									vero omnis illo inventore, repellat non hic
+									nisi beatae facere officiis assumenda.
+									Incidunt.
+								</p>
+							</div>
+						</div>
+						<div class="media">
+							<img
+								src="https://picsum.photos/60/40"
+								class="rounded-circle"
+								alt="User 2"
+							/>
+							<div class="media-body">
+								<h5 class="mt-0">User 2</h5>
+								<p class="mb-0">Rating: 4 stars</p>
+								<p>Good value for money.</p>
+							</div>
+						</div>
+					</div>
+					<hr />
+					<h3>Add Your Review</h3>
+					<form>
+						<div class="form-group">
+							<label for="username">Your Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="username"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="rating">Rating</label>
+							<input
+								type="number"
+								class="form-control"
+								id="rating"
+								min="1"
+								max="5"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="review">Review</label>
+							<textarea
+								class="form-control"
+								id="review"
+								rows="3"
+							></textarea>
+						</div>
+						<button
+							type="button"
+							class="btn btn-primary"
+							id="submit-review"
+						>
+							Submit Review
+						</button>
+					</form>
+					<hr />
+					<a href="cart.html"
+						><button class="btn btn-success">Add to Cart</button></a
+					>
+				</div>
+			</div>
+		</main>
+		<footer class="bg-dark text-white text-center py-3">
+			<p>&copy; 2023 OHSEEM</p>
+		</footer>
+	</body>
+</html>
